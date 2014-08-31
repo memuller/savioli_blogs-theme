@@ -18,22 +18,6 @@
 
 <body <?php body_class(); ?>>
 
-<div class="barra_topo"><div id="wrapper2">
-	<div id="barra_left">
-		<ul>
-			<li><a href="#" title="Site da Clínica Savioli">Clínica Savioli</a></li>
-			<li><a href="#" title="Blog do Dr. Roque Savioli">Dr. Roque Savioli</a></li>
-			<li><a href="#" title="Loja Virtual">Gioli</a></li>
-		</ul>
-	</div>
-
-	<div id="barra_right">
-	 
-	</div>
-
-</div></div>
-
-
 <div id="wrapper">
 
 	<div id="header">
