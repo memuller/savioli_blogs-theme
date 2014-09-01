@@ -1,4 +1,19 @@
 <?php get_header(); ?>
+
+	<div id="wrapper2">
+	
+	<div id="midias">
+		<div id="box1"></div>
+	
+		<div id="box2"></div>
+
+		<div id="box3"></div>
+	</div>
+
+	</div>
+
+
+
 	<div id="content">
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>

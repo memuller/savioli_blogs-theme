@@ -1,7 +1,7 @@
 /*  
 Theme Name: Savioli Blogs Theme
 Theme URI: http://picomol.de/picolight/
-Theme for the Savioli Blogs. Based on picolight 1.1.17.4.
+Description: Theme for the Savioli Blogs. Based on picolight 1.1.17.4.
 Version: 14.08.29
 Author: Agência Point, Valentin
 Author URI: http://picomol.de/about/
@@ -1421,4 +1421,27 @@ a, input, submit {
 	.comment-content {
 		margin-top: 5px;
 		}
+}
+
+#content {
+	width: 67%;
+}
+#content .galleria {
+  min-height: 700px;
+  width: 100%;
+}
+.galleria-theme-savioli .galleria-info-text {
+    background: url('images/background_menu.png') repeat scroll 0% 0% transparent;    
+    padding: 12px;
+    display: none;
+    /* IE7 */ zoom:1;
+}
+.galleria-theme-savioli .galleria-info-title {
+    margin: 0;
+    color: #4AAC8A;
+    margin-bottom: 7px;
+}
+.galleria-theme-savioli .galleria-info-description {
+    margin: 0;
+    color: #ccc;
 }
