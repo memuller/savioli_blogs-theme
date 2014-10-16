@@ -12,7 +12,19 @@
 
 	</div>
 
-
+	<section id="youtube" class="wrapper">
+	<?php foreach(\Savioli\Video::all() as $video): ?>
+		<article>
+			<div class="entry-media"><?php echo wp_oembed_get($video->url); ?></div>
+			<h2 class="entry-title">
+				<?php echo $video->title ?>
+			</h2>
+			<time>
+				<?php echo get_the_date('', $video->ID); ?>
+			</time>
+		</article>
+	<?php endforeach; ?>
+	</section>
 
 	<div id="content">
 	<?php if (have_posts()) : ?>
@@ -84,5 +96,4 @@
 
 	</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
