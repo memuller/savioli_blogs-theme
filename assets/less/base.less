@@ -1,0 +1,64 @@
+@green: #4AAD8A;
+
+.spacer {
+    margin-top: 20px;
+}
+
+#youtube {
+    padding-right: 25px;
+    padding-left: 25px;
+    min-height: 245px;
+
+    article {
+        float: left;
+        width: 30%;
+        padding-left: 5%; 
+    
+        &:nth-of-type(1) { padding-left: 0px; }
+    
+        h2 {
+            margin-top: 5px;
+            font-size: 1.3em;
+        }
+        time {
+            margin-top: 3px;
+            font-style: italic;
+        }
+    }
+
+    nav {
+        float: right;
+        padding-top: 5px;
+        margin-right: -9px;
+        a {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #aaa;
+        }
+    }
+}
+
+#instafeed {
+    .spacer;
+    width: 100%;
+    min-height: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    a {
+        float: left;
+        width: 16%;
+        img {
+            border: none;
+            width: 100%;
+        }
+    }
+}
+
+.home {
+    #content {
+        .spacer !important;
+        width: 98%;
+        max-width: 98%;
+    }
+}

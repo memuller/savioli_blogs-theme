@@ -1,32 +1,31 @@
 <?php get_header(); ?>
-
-	<div id="wrapper2">
-	
-	<div id="midias">
-		<div id="box1"></div>
-	
-		<div id="box2"></div>
-
-		<div id="box3"></div>
-	</div>
-
-	</div>
-
 	<section id="youtube" class="wrapper">
-	<?php foreach(\Savioli\Video::all() as $video): ?>
-		<article>
-			<div class="entry-media"><?php echo wp_oembed_get($video->url); ?></div>
-			<h2 class="entry-title">
-				<?php echo $video->title ?>
-			</h2>
-			<time>
-				<?php echo get_the_date('', $video->ID); ?>
-			</time>
-		</article>
-	<?php endforeach; ?>
+		<?php foreach(\Savioli\Video::all(array('only' => 3)) as $video): ?>
+			<article>
+				<div class="entry-media"><?php echo wp_oembed_get($video->url, array('width' => 310)); ?></div>
+				<h2 class="entry-title">
+					<a href="<?php echo $video->url ?>">
+						<?php echo $video->title ?>
+					</a>
+				</h2>
+				<time>
+					<?php echo get_the_date('', $video->ID); ?>
+				</time>
+			</article>
+		<?php endforeach; ?>
+	
+		<nav class="next">
+			<a href="<?php echo \Savioli\Video::channel_url() ?>">
+				mais vídeos
+			</a>
+		</nav>
 	</section>
 
-	<div id="content">
+	<section id="instafeed">
+		
+	</section>
+
+	<section id="content">
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -94,6 +93,6 @@
 
 	<?php endif; ?>
 
-	</div>
+	</section>
 
 <?php get_footer(); ?>

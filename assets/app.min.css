@@ -1,0 +1,55 @@
+.spacer {
+  margin-top: 20px;
+}
+#youtube {
+  padding-right: 25px;
+  padding-left: 25px;
+  min-height: 245px;
+}
+#youtube article {
+  float: left;
+  width: 30%;
+  padding-left: 5%;
+}
+#youtube article:nth-of-type(1) {
+  padding-left: 0px;
+}
+#youtube article h2 {
+  margin-top: 5px;
+  font-size: 1.3em;
+}
+#youtube article time {
+  margin-top: 3px;
+  font-style: italic;
+}
+#youtube nav {
+  float: right;
+  padding-top: 5px;
+  margin-right: -9px;
+}
+#youtube nav a {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #aaa;
+}
+#instafeed {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 200px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#instafeed a {
+  float: left;
+  width: 16%;
+}
+#instafeed a img {
+  border: none;
+  width: 100%;
+}
+.home #content {
+  margin-top: 20px !important;
+  width: 98%;
+  max-width: 98%;
+}
+
