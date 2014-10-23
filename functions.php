@@ -1,5 +1,5 @@
 <?php
-
+require_once('lib/enqueue.php');	
 add_action( 'after_setup_theme', 'picolight_setup' );
 
 if ( ! function_exists( 'picolight_setup' ) ):
@@ -226,7 +226,7 @@ if ( is_singular() && get_option( 'thread_comments' ) )
 // scripts
 function picolight_scripts() {
 	// Load main stylesheet.
-	wp_enqueue_style( 'picolight-style', get_stylesheet_uri() );
+	#wp_enqueue_style( 'picolight-style', get_stylesheet_uri() );
 
 	// Load reply-to javascript	
 	if (is_singular() && get_option('thread_comments')) {
