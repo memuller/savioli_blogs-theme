@@ -52,4 +52,21 @@
   width: 98%;
   max-width: 98%;
 }
+@media screen and (max-width: 1000px) {
+  #youtube article {
+    float: none;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+    width: 96%;
+  }
+  #youtube article iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #instafeed a {
+    width: 33%;
+  }
+}
 
