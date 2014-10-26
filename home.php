@@ -21,10 +21,12 @@
 		</nav>
 	</section>
 
-	<section id="instafeed">
-		
-	</section>
-
+	<?php $instagram_options = get_option('savioli_photo_options');?>
+	<?php if ($instagram_options['enabled']): ?>	
+		<section id="instafeed">
+		</section>
+	<?php endif ?>
+	
 	<section id="content">
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
