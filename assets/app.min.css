@@ -59,6 +59,12 @@
   width: 98%;
   max-width: 98%;
 }
+.single #content .post {
+  margin-bottom: 0px;
+}
+.single #content .post .pagelinks {
+  display: none;
+}
 #footer {
   font-weight: 400;
   font-size: 11px;
