@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 	<section id="youtube" class="wrapper">
-		<?php foreach(\Savioli\Video::all(array('only' => 3)) as $video): ?>
+		<?php foreach(\Savioli\Video::all(array('only' => 4)) as $video): ?>
 			<article>
-				<div class="entry-media"><?php echo wp_oembed_get($video->url, array('width' => 310)); ?></div>
+				<div class="entry-media"><?php echo wp_oembed_get($video->url, array('width' => 230, 'height' => 129)); ?></div>
 				<h2 class="entry-title">
 					<a href="<?php echo $video->url ?>">
-						<?php echo $video->title ?>
+						<?php echo limit($video->title, 25, '') ?>
 					</a>
 				</h2>
 				<time>
