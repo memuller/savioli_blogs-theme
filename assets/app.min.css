@@ -1,3 +1,8 @@
+a:link,
+a:active,
+a:visited {
+  color: #33775f;
+}
 .spacer {
   margin-top: 30px;
 }
@@ -6,19 +11,70 @@
   margin-bottom: 2.12766%;
   padding-top: 0px;
 }
+.col-half {
+  width: 48.5%;
+}
+.col-half:nth-of-type(odd) {
+  margin-right: 1.5%;
+}
+.col-half:nth-of-type(even) {
+  margin-left: 1.5%;
+}
 .right {
   float: right;
 }
 .home section {
   float: left;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
-#youtube {
-  padding: 25px;
+.home h1 {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #33775f;
+  margin: 10px 0px 10px 0;
+  border-bottom: 1px solid #CCC;
+  padding: 3px;
+}
+.home nav {
+  float: right;
+  padding-top: 5px;
+}
+.home nav a {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #aaa;
+}
+.home section#content {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0px;
+  margin-top: 0px !important;
+}
+.home section#content article {
+  min-height: 120px;
+}
+.home section#content h2 {
+  margin-bottom: 3px;
+  font-size: 1.3em;
+}
+.home section#content .details {
+  color: #777777;
+  margin-bottom: 5px;
+}
+.home section#content .details span {
+  margin-right: 1em;
+}
+.home section#content .details .categories ul,
+.home section#content .details .categories li {
+  display: inline;
 }
 #youtube article {
   float: left;
-  width: 23%;
-  padding-left: 2.66%;
+  width: 23.5%;
+  padding-left: 2%;
 }
 #youtube article:nth-of-type(1) {
   padding-left: 0px;
@@ -31,33 +87,24 @@
   margin-top: 3px;
   font-style: italic;
 }
-#youtube nav {
-  float: right;
-  padding-top: 5px;
+#instagram {
+  margin-bottom: 3em;
 }
-#youtube nav a {
-  font-size: 0.9em;
-  font-style: italic;
-  color: #aaa;
-}
-#instafeed {
-  margin-top: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
+#instagram #instafeed {
+  width: 100%;
+  max-width: 100%;
   min-height: 300px;
 }
-#instafeed a {
+#instagram #instafeed a {
   float: left;
   width: 16.66%;
 }
-#instafeed a img {
+#instagram #instafeed a img {
   border: none;
   width: 100%;
 }
-.home #content {
-  margin-top: 30px !important;
-  width: 98%;
-  max-width: 98%;
+#instagram nav {
+  padding-top: 0.5em;
 }
 .single #content .post {
   margin-bottom: 0px;
@@ -66,14 +113,9 @@
   display: none;
 }
 #footer {
-  font-weight: 400;
-  font-size: 11px;
-  background: linear-gradient(#4f5050, #000000);
+  background: linear-gradient(#4f5050, black);
   width: 100%;
   max-width: none ;
-}
-#footer img {
-  border: none;
 }
 #footer .scroll-top {
   display: none;
@@ -84,15 +126,16 @@
 #footer .content {
   display: inline-block;
   min-width: 960px;
-  padding: 2em;
-  box-sizing: border-box;
+  padding: 1em 2em 0em 2em;
 }
 #footer .powered {
   color: white;
   text-align: left;
+  margin-bottom: 0px;
 }
 #footer .powered .grid {
   padding-right: 1em;
+  margin-bottom: 0px;
 }
 #footer .powered img {
   display: block;
@@ -104,10 +147,12 @@
 #footer .copyright {
   color: white;
   text-align: left;
-  margin-top: 2em;
+  margin-bottom: 0px;
+  margin-top: 1em;
 }
 #footer .copyright .grid {
   padding-right: 1em;
+  margin-bottom: 0px;
 }
 #footer .copyright img {
   display: block;
@@ -117,11 +162,18 @@
   margin-top: 1em;
 }
 #footer .copyright a {
-  color: white;
+  color: white !important;
+}
+#footer {
+  font-weight: 400;
+  font-size: 11px;
+}
+#footer img {
+  border: none;
 }
 @media screen and (max-width: 1000px) {
   #youtube article {
-    width: 48%;
+    width: 49%;
   }
   #youtube article iframe {
     width: 100%;
@@ -138,7 +190,7 @@
 @media screen and (max-width: 320px) {
   #youtube article {
     float: none;
-    width: 96%;
+    width: 100%;
   }
   #youtube article iframe {
     width: 100%;
