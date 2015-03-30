@@ -36,7 +36,7 @@ function picolight_setup() {
 	add_theme_support( 'custom-background');
 
 	// Thumbnails
-	set_post_thumbnail_size( '150', '150', true );
+	//set_post_thumbnail_size( '150', '150', true );
 
 	//Sidebars
 	function picolight_sidebars(){
