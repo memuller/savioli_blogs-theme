@@ -10,7 +10,11 @@
 						</a>
 					</h2>
 				</div>
+
 				<summary>
+					<div class="thumbnail">
+						<?php the_post_thumbnail('medium') ?>
+					</div>
 					<div class="details">
 						<span class="categories">
 							<?php the_category() ?>
@@ -22,6 +26,7 @@
 							<?php comments_number() ?>
 						</span>
 					</div>
+					
 					<?php the_excerpt() ?>
 				</summary>
 			</article>

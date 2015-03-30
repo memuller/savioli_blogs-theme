@@ -60,6 +60,12 @@ a:visited {
   margin-bottom: 3px;
   font-size: 1.3em;
 }
+.home section#content .thumbnail {
+  margin-bottom: 5px;
+}
+.home section#content .thumbnail img {
+  width: 100%;
+}
 .home section#content .details {
   color: #777777;
   margin-bottom: 5px;
