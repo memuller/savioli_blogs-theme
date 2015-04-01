@@ -5,7 +5,7 @@
 
 add_action('wp_enqueue_scripts', function () {
 
-  wp_enqueue_style('main_css', get_stylesheet_directory_uri() . '/assets/main.min.css', false, 'e9e8ac70f18af9c0370306df2549d5ca');
+  wp_enqueue_style('main_css', get_stylesheet_directory_uri() . '/assets/main.min.css', false, '5538f9de94f4842b759c6238f2f2a50b');
 
   wp_register_script('main_scripts', get_stylesheet_directory_uri() . '/assets/main.min.js', array('jquery'), 'a3f436606a9c3c72c5c3f844b8ffbb58', true);
   wp_enqueue_script( 'main_scripts');

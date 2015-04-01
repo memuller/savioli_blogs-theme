@@ -43,9 +43,10 @@ a:visited {
   padding-top: 5px;
 }
 .home nav a {
-  font-size: 0.9em;
+  font-size: 1em;
   font-style: italic;
-  color: #aaa;
+  font-weight: bold;
+  color: #33775f;
 }
 .home section#content {
   width: 100%;

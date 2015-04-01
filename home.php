@@ -34,7 +34,7 @@
 		<?php endforeach; ?>
 		<nav class="next">
 			<a href="<?php echo home_url('posts') ?>">
-				mais posts
+				mais artigos
 			</a>
 		</nav>
 	</section>
